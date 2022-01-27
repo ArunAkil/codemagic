@@ -5,10 +5,10 @@ workflows:
     environment:
       vars:
         FCI_KEYSTORE_PATH: /tmp/keystore.keystore
-        FCI_KEYSTORE: upload-keystore.jks # <-- Put your encrypted keystore here
-        FCI_KEYSTORE_PASSWORD: 123abc # <-- Put your encrypted keystore password here
-        FCI_KEY_PASSWORD: 123abc # <-- Put your encrypted key alias password here
-        FCI_KEY_ALIAS: upload # <-- Put your encrypted key alias here
+        FCI_KEYSTORE: encrypted(...) # <-- Put your encrypted keystore here
+        FCI_KEYSTORE_PASSWORD: encrypted(...) # <-- Put your encrypted keystore password here
+        FCI_KEY_PASSWORD: encrypted(...) # <-- Put your encrypted key alias password here
+        FCI_KEY_ALIAS: encrypted(...) # <-- Put your encrypted key alias here
       flutter: stable
       xcode: latest
       cocoapods: default
