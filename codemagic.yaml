@@ -71,3 +71,4 @@ workflows:
           app_id: 1:576069540849:android:6af0d182c4d0302e530250
           groups: 
             - androidTesters
+            
