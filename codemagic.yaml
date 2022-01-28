@@ -50,21 +50,3 @@ workflows:
         notify:
           success: true
           failure: false
-      slack: 
-        # See the following link about how to connect your Slack account - https://docs.codemagic.io/publishing-yaml/distribution/#slack
-        channel: '#builds'
-        notify_on_build_start: true   # To receive a notification when a build starts
-        notify:
-          success: true               # To not receive a notification when a build succeeds
-          failure: false              # To not receive a notification when a build fails
-      google_play:
-        credentials: Encrypted("")
-        track: internal
-        in_app_update_priority: 0
-      firebase:
-        firebase_token: Encrypted(...)
-        android:
-          app_id: 1:576069540849:android:6af0d182c4d0302e530250
-          groups: 
-            - androidTesters
-            
