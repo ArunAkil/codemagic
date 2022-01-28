@@ -36,7 +36,7 @@ workflows:
           find . -name "Podfile" -execdir pod install \;
       - name: Build APK with Flutter  
         script: |
-          cd . && flutter build apk
+          cd . && flutter build apk --release
     artifacts:
       - build/**/outputs/**/*.apk
       - build/**/outputs/**/*.aab
