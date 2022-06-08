@@ -46,7 +46,7 @@ workflows:
       email:
         recipients:
           - mohammedrasith99@gmail.com
-          - user_2@example.com
+          - arunkumar02136@gmail.com
         notify:
           success: true
           failure: false
